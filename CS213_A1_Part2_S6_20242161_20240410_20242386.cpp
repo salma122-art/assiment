@@ -373,11 +373,11 @@ void ImageDarkenLighten()
             {
                 if (choice == 1)
                 {
-                    image(i, j, k) = image(i, j, k) * 0.5; // Darken
+                    image(i, j, k) = image(i, j, k) * 0.5; 
                 }
                 else if (choice == 2)
                 {
-                    int newVal = image(i, j, k) * 1.5; // Lighten
+                    int newVal = image(i, j, k) * 1.5; 
                     if (newVal > 255)
                         newVal = 255;
                     image(i, j, k) = newVal;
@@ -452,16 +452,16 @@ void ImageAddFrame()
 
     if (frameType == 1)
     {
-        // 🟦 Simple Blue Frame (20 pixels)
+        
         for (int x = 0; x < image.width; ++x)
         {
             for (int y = 0; y < image.height; ++y)
             {
                 if (x < 20 || x >= image.width - 20 || y < 20 || y >= image.height - 20)
                 {
-                    image(x, y, 0) = 0;   // Red
-                    image(x, y, 1) = 0;   // Green
-                    image(x, y, 2) = 255; // Blue
+                    image(x, y, 0) = 0;   
+                    image(x, y, 1) = 0;   
+                    image(x, y, 2) = 255; 
                 }
             }
         }
@@ -475,9 +475,9 @@ void ImageAddFrame()
             for (int y = 0; y < image.height; ++y)
             {
                 bool border =
-                    (x < 5 || x >= image.width - 5 || y < 5 || y >= image.height - 5) || // outer border
+                    (x < 5 || x >= image.width - 5 || y < 5 || y >= image.height - 5) || 
                     ((x >= 15 && x <= 20) || (x >= image.width - 21 && x <= image.width - 16) ||
-                     (y >= 15 && y <= 20) || (y >= image.height - 21 && y <= image.height - 16)); // inner pattern
+                     (y >= 15 && y <= 20) || (y >= image.height - 21 && y <= image.height - 16)); 
 
                 if (border)
                 {
@@ -712,8 +712,8 @@ void ImageOilPaint()
     Image image(filename);
     Image out(image.width, image.height);
 
-    int radius = 1;  // حجم التأثير (كل ما زاد زادت النعومة)
-    int levels = 40; // عدد مستويات السطوع
+    int radius = 1;  
+    int levels = 40; 
 
     for (int i = radius; i < image.width - radius; ++i)
     {
