@@ -848,17 +848,17 @@ void ImagePurpleEffect()
     {
         for (int j = 0; j < image.height; ++j)
         {
-            unsigned char R = image(i, j, 0);
-            unsigned char G = image(i, j, 1);
-            unsigned char B = image(i, j, 2);
+            unsigned char RED = image(i, j, 0);
+            unsigned char GREEN = image(i, j, 1);
+            unsigned char BLUE = image(i, j, 2);
 
-            R = min(255, int(R * 1.2));
-            G = min(255, int(G * 0.7));
-            B = min(255, int(B * 1.3));
+            RED = min(255, int(RED * 1.2));
+            GREEN = min(255, int(GREEN * 0.7));
+            BLUE = min(255, int(BLUE * 1.3));
 
-            image(i, j, 0) = R;
-            image(i, j, 1) = G;
-            image(i, j, 2) = B;
+            image(i, j, 0) = RED;
+            image(i, j, 1) = GREEN;
+            image(i, j, 2) = BLUE;
         }
     }
 
