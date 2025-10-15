@@ -30,10 +30,10 @@ Filter 15 (Old TV Effect) → Salma
 Filter 16 (Purple Effect) → Hana
  - Menu Integration & Testing  -> ALL the team
  Video Demo Link:
-[.................]
+[https://drive.google.com/file/d/1CwHqNbR-egcK9d9R531v1YDVyL2QNvrL/view?usp=drive_link]
 
 Shared Google Doc Link:
-[..................................]
+[https://drive.google.com/file/d/1t2fjANsHgoOHmdaSb414JsWAVZhGw1Ym/view?usp=drive_link]
 
 
 
@@ -957,3 +957,4 @@ int main()
     return 0;
 
 }
+
